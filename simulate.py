@@ -18,11 +18,11 @@ def simulate_one_sample_MR(
     # Exclusion restriction: Instruments affect Y only through X.
     # removed pleio_mu and pleio_tau, so SNPs don’t have direct effects on Y
     # pleio_mu=0.0, pleio_tau=0.0, 
-    # # TODO figure out if I want these values?
-    # # set tau>0 to add horizontal pleiotropy: theta ~ N(mu, tau^2) 
-    # # defines horizontal pleiotropy that is the direct SNP -> Y effects that break exclusion restriction
-    # # for MR to be under under the ideal IV assumptions, these are set to 0 s.t  all exclusion restriction assumptions hold (the only pathway from SNPs to outcome is through the exposure)
-    # # MR can sometimes handle violations like pleiotropy. To see how robust the method is, I deliberately turn these knobs
+    # TODO figure out if I want these values?
+    # set tau>0 to add horizontal pleiotropy: theta ~ N(mu, tau^2) 
+    # defines horizontal pleiotropy that is the direct SNP -> Y effects that break exclusion restriction
+    # for MR to be under under the ideal IV assumptions, these are set to 0 s.t  all exclusion restriction assumptions hold (the only pathway from SNPs to outcome is through the exposure)
+    # MR can sometimes handle violations like pleiotropy. To see how robust the method is, I deliberately turn these knobs
 
     sigma_x=1.0, sigma_y=1.0, # noise in exposure and outcome
 
